@@ -1,6 +1,6 @@
 // Deterministic ROI math. No model call happens in this file, on purpose.
 // The model (via the compute_roi tool) may only supply hoursPerWeekSaved and
-// peopleAffected as inputs — every dollar figure below is plain arithmetic.
+// peopleAffected as inputs; every dollar figure below is plain arithmetic.
 // This is the same separation Vedette uses: the model proposes hours and
 // scope, code computes money.
 

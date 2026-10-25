@@ -11,7 +11,7 @@ const server = new McpServer({
 });
 
 // Tool 1: search evidence chunks by keyword.
-// Demonstrates evidence-grounded retrieval — every result is traceable to a
+// Demonstrates evidence-grounded retrieval: every result is traceable to a
 // named source document, nothing is generated.
 server.tool(
   "search_evidence",
@@ -60,7 +60,7 @@ server.tool(
 
 // Tool 3: compute ROI. The model may call this with proposed inputs
 // (hours saved, people affected) but the dollar math happens entirely here,
-// in plain TypeScript — the model cannot emit a dollar figure itself.
+// in plain TypeScript. The model cannot emit a dollar figure itself.
 server.tool(
   "compute_roi",
   "Compute annual hours and dollars saved from proposed hours-per-week savings, people affected, and hourly cost. All arithmetic is deterministic; the caller supplies the assumptions, this tool supplies the math.",
